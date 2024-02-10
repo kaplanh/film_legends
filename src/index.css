@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: #f4d467;
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+    background-image: url("https://e0.pxfuel.com/wallpapers/936/151/desktop-wallpaper-movie-minimal-mask-v-for-vendetta-background-99b290.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    & .logo {
+        animation: logo-spin infinite 10s linear;
+    }
+    & h1 {
+        font-family: fantasy;
+        animation: h1-translate infinite 5s alternate;
+    }
+}
+@keyframes h1-translate {
+    0% {
+        transform: translateX(-250px);
+    }
+    100% {
+        transform: translateX(250px);
+    }
+}
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.film-container {
+    background-image: url("https://us.123rf.com/450wm/ghenadie/ghenadie1604/ghenadie160400080/55827845-cinema-background-with-film-strips-and-light-rays-vector-illustration.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+.film-card {
+    /* background-color: #f4d467; */
+    background-image: url("https://e0.pxfuel.com/wallpapers/936/151/desktop-wallpaper-movie-minimal-mask-v-for-vendetta-background-99b290.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    border: none;
+    color: white;
+
+    & img {
+        filter: blur(3px);
+        transition: transform 0.5s;
+    }
+    &:hover {
+        box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+        & img {
+            transform: scale(0.9);
+            filter: none;
+        }
+    }
+}
